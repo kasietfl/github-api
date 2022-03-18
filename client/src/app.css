@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+/* Navbar */
+.navbar {
+  height: 60px;
+  background-color: rgb(59, 57, 57);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.listItem {
+  margin-right: 20px;
+  font-weight: 500;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.wrapper {
+  width: 60%;
+  height: 100%;
+  -webkit-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+
+/* Login */
+
+.login {
+  height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login--button{
+  width: 160px;
+  padding: 15px 30px;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background-color: black;
+}
+
+.login--icon{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.login--title{
+  position: absolute;
+  top: 200px;
+  color: #595757;
+}
+
+.link{
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* profile */
+
+.profile {
+  height: calc(100vh - 60px);
+  width: 70%;
+  display: flex;
+  align-items: center;
+  
+}
+
+
+.left,.right{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.progile--img{
+  width: 100%;
+}
+
+.profile--name{
+  font-weight: 500;
+  font-size: 26px;
+}
+
+.profile--username{
+  color: #595757;
+}
+
+.profile--links .link{
+  padding: 0 10px;
+  text-decoration: underline;
+  color: #595757;
+}
+
+.profile--button {
+  width: 100%;
+  padding: 15px 25px;
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  cursor: pointer;
+  background-color: black;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 0 15px;
+}
+
+.profile--info{
+  margin: 10px 0 0;
+}
+
+.profile--icon {
+  display: inline-block;
+  padding-top: 3px;
+  color: #595757;
+}
+
+/* input */
+.input{
+  margin: 10px 0;
+}
+
+.input input{
+  padding: 5px;
+}
+
+.input button{
+  padding: 5px;
+  color: white;
+  font-weight: 700;
+  /* font-size: 18px; */
+  background-color: rgb(59, 57, 57);
+}
+
+/* repos */
+
+.repos {
+  height: 100%;
+  width: 90%;
+  display: flex;
+}
+
+.repos--title{
+  text-align: center;
+  margin: 20px;
+}
+
+.repos--link{
+  text-decoration: none;
+  color: #595757;
+}
+
+.repos--owner {
+  margin: 10px 0;
+}
+
+.repo {
+  width: 700px;
+  box-shadow: 0px 1px rgba(66, 68, 90, 0.3);
+}
+
+/* users */
+.users {
+  height: calc(100vh - 60px);
+  width: 100%;
+}
+
+.welcome--title{
+  text-align: center;
+  color: #595757;
+  margin: 16px;
+}
+
+.users--info {
+  margin: 20px;
+}
+
+.users--title{
+  text-align: center;
+  margin: 10px;
+  color: #595757;
+}
+
+.search {
+  width: 75%;
+}
+
+.search--btn {
+  width: 20%;
+}
+
+.welcome {
+  height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+}
+
+.users--list {
+  margin: 10px;
+}
+
+.users--list li{
+  padding: 0 0 3px;
+  list-style-type:square;
+}
+
+@media screen and (max-width: 1000px) {
+
+  .wrapper {
+    width: 65%;
+    height: 90%;
+    flex-direction: column;
+  }
+
+  .login--title {
+    display: none;
+  }
+
+}
